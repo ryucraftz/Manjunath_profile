@@ -1,5 +1,5 @@
-// Import Real Result Images
 import { FaWhatsapp } from "react-icons/fa";
+import majuImg from "../assets/maju.png";
 import KeerthiFront from "../assets/real-results/KeerthiFront.jpg";
 import ManojFront from "../assets/real-results/ManojFront.jpg";
 import NaushadFront from "../assets/real-results/NaushadFront.jpg";
@@ -71,16 +71,14 @@ const ThankYou = () => {
                         </a>
                     </div>
 
-                    {/* Right Content - Video */}
+                    {/* Right Content - Image */}
                     <div className="flex-1 w-full max-w-md mx-auto md:max-w-full">
-                        <div className="aspect-[9/16] bg-black rounded-2xl overflow-hidden shadow-2xl relative">
-                            {/* Placeholder for Video - In a real scenario, embed the video here */}
-                            <div className="absolute inset-0 flex items-center justify-center text-white text-center p-4 bg-gray-900">
-                                <div>
-                                    <p className="font-bold text-xl mb-2">Welcome Video</p>
-                                    <p className="text-gray-400 text-sm">Video content not available.</p>
-                                </div>
-                            </div>
+                        <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl relative">
+                            <img
+                                src={majuImg}
+                                alt="Manjunath"
+                                className="w-full h-full object-cover"
+                            />
                         </div>
                     </div>
                 </div>
