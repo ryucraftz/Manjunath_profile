@@ -1,4 +1,5 @@
 // Import Real Result Images
+import { FaWhatsapp } from "react-icons/fa";
 import KeerthiFront from "../assets/real-results/KeerthiFront.jpg";
 import ManojFront from "../assets/real-results/ManojFront.jpg";
 import NaushadFront from "../assets/real-results/NaushadFront.jpg";
