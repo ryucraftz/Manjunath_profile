@@ -142,7 +142,7 @@ const ThankYou = () => {
                 style={{
                     position: 'fixed',
                     bottom: '30px',
-                    left: '50%',
+                    left: '40%',
                     transform: `translateX(-50%) translateY(${showButton ? '0' : '100px'})`,
                     opacity: showButton ? 1 : 0,
                     zIndex: 9999,
