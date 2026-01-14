@@ -5,6 +5,7 @@ import LandingPage from "./pages/LandingPage";
 import ThankYou from "./pages/ThankYou";
 
 function App() {
+  console.log("App.jsx: Rendering...");
   return (
     <Router>
       <Routes>
