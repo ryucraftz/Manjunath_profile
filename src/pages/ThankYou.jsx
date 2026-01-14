@@ -149,7 +149,7 @@ const ThankYou = () => {
                     maxWidth: '90vw',
                     transition: 'all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)'
                 }}
-                className={`${showButton ? 'pointer-events-auto animate-bounce-slow' : 'pointer-events-none'} left-[20%] md:left-[40%]`}
+                className={`${showButton ? 'pointer-events-auto animate-bounce-slow' : 'pointer-events-none'} left-[17%] md:left-[40%]`}
             >
                 <a
                     href="https://chat.whatsapp.com/IHIRNwlEFDRIjBfyFE1lN1"
