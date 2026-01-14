@@ -6,7 +6,6 @@ import NaushadFront from "../assets/real-results/NaushadFront.jpg";
 import RakshaFront from "../assets/real-results/RakshaFront.jpg";
 import SandeepFront from "../assets/real-results/SandeepFront.jpg";
 import VinayFront from "../assets/real-results/VinayFront.jpg";
-import AyushFront from "../assets/real-results/AyushFront.jpg";
 
 const ThankYou = () => {
     console.log("ThankYou.jsx: MOUNTING");
@@ -18,7 +17,6 @@ const ThankYou = () => {
         RakshaFront,
         SandeepFront,
         VinayFront,
-        AyushFront
     ];
 
     return (
@@ -113,26 +111,41 @@ const ThankYou = () => {
                         ))}
                     </div>
 
-                    {/* Sticky Footer Bar */}
+                    {/* Sticky Floating Footer Button - Creative Design */}
                     <div
                         style={{
                             position: 'fixed',
-                            bottom: 0,
-                            left: 0,
-                            right: 0,
+                            bottom: '30px',
+                            left: '50%',
+                            transform: 'translateX(-50%)',
                             zIndex: 9999,
-                            backgroundColor: '#0d8d1b',
-                            width: '100%',
+                            width: 'auto',
+                            maxWidth: '90%',
                         }}
+                        className="animate-bounce-slow"
                     >
                         <a
                             href="https://chat.whatsapp.com/IHIRNwlEFDRIjBfyFE1lN1"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex w-full justify-center items-center gap-3 text-white py-4 font-bold text-xl transition-colors hover:bg-[#0b7a17]"
+                            className="
+                                group
+                                flex items-center justify-center gap-3 
+                                bg-gradient-to-r from-[#25D366] to-[#128C7E]
+                                text-white 
+                                py-4 px-8 
+                                rounded-full 
+                                font-bold text-lg md:text-xl
+                                shadow-[0_10px_40px_-10px_rgba(37,211,102,0.6)]
+                                hover:shadow-[0_20px_50px_-10px_rgba(37,211,102,0.8)]
+                                hover:scale-105
+                                transition-all duration-300 ease-out
+                                border-2 border-white/20
+                                backdrop-blur-sm
+                            "
                         >
-                            <FaWhatsapp className="text-2xl" />
-                            Join Our Whatsapp Group
+                            <FaWhatsapp className="text-2xl md:text-3xl animate-pulse" />
+                            <span>Join Our Whatsapp Group</span>
                         </a>
                     </div>
 
