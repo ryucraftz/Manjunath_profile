@@ -1,0 +1,19 @@
+* {
+  font-family: 'Satoshi', sans-serif;
+}
+
+
+/* --- Fix unwanted horizontal scroll --- */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prefer clip when supported (prevents layout + keeps scrollbars clean) */
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+ 

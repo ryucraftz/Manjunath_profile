@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manjunath | Landing Page</title>
+
+    <!-- Wistia -->
+    <script src="https://fast.wistia.com/player.js" async></script>
+    <script
+      src="https://fast.wistia.com/embed/hafumm5bvl.js"
+      async
+      type="module"
+    ></script>
+
+    <style>
+      wistia-player[media-id="hafumm5bvl"]:not(:defined) {
+        background: center / contain no-repeat
+          url("https://fast.wistia.com/embed/medias/hafumm5bvl/swatch");
+        display: block;
+        filter: blur(5px);
+        padding-top: 56.25%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- ✅ ONLY THIS SCRIPT -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
