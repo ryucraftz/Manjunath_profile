@@ -113,12 +113,23 @@ const ThankYou = () => {
                         ))}
                     </div>
 
-                    <div className="fixed bottom-0 left-0 right-0 z-50 bg-[#0d8d1b]">
+                    {/* Sticky Footer Bar */}
+                    <div
+                        style={{
+                            position: 'fixed',
+                            bottom: 0,
+                            left: 0,
+                            right: 0,
+                            zIndex: 9999,
+                            backgroundColor: '#0d8d1b',
+                            width: '100%',
+                        }}
+                    >
                         <a
                             href="https://chat.whatsapp.com/IHIRNwlEFDRIjBfyFE1lN1"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex w-full justify-center items-center gap-3 bg-[#0d8d1b] hover:bg-[#0b7a17] text-white py-4 font-bold text-xl shadow-[0_-4px_10px_rgba(0,0,0,0.1)] transition-colors"
+                            className="flex w-full justify-center items-center gap-3 text-white py-4 font-bold text-xl transition-colors hover:bg-[#0b7a17]"
                         >
                             <FaWhatsapp className="text-2xl" />
                             Join Our Whatsapp Group
