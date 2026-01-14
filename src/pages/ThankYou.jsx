@@ -113,12 +113,12 @@ const ThankYou = () => {
                         ))}
                     </div>
 
-                    <div className="fixed bottom-0 left-0 right-0 z-50 bg-black p-4 flex justify-center shadow-2xl">
+                    <div className="fixed bottom-0 left-0 right-0 z-50">
                         <a
                             href="https://chat.whatsapp.com/IHIRNwlEFDRIjBfyFE1lN1"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex w-full md:w-auto justify-center items-center gap-3 bg-[#0d8d1b] hover:bg-[#0b7a17] text-white px-6 py-4 rounded-full font-bold text-lg shadow-[0_8px_30px_rgb(0,0,0,0.3)] transition-all transform hover:scale-105 border-2 border-white"
+                            className="flex w-full justify-center items-center gap-3 bg-[#0d8d1b] hover:bg-[#0b7a17] text-white py-4 font-bold text-xl shadow-[0_-4px_10px_rgba(0,0,0,0.1)] transition-colors"
                         >
                             <FaWhatsapp className="text-2xl" />
                             Join Our Whatsapp Group
