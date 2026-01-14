@@ -102,6 +102,14 @@ const ThankYou = () => {
                                     alt={`Transformation Result ${i + 1}`}
                                     className="w-full h-full object-cover"
                                 />
+                                {/* Day 1 Badge */}
+                                <div className="absolute bottom-4 left-4 bg-[#b91c1c] text-white px-4 py-1.5 rounded-md shadow-lg font-bold text-sm sm:text-base pointer-events-none">
+                                    Day 1
+                                </div>
+                                {/* Day 90 Badge */}
+                                <div className="absolute bottom-4 right-4 bg-[#b91c1c] text-white px-4 py-1.5 rounded-md shadow-lg font-bold text-sm sm:text-base pointer-events-none">
+                                    Day 90
+                                </div>
                             </div>
                         ))}
                     </div>
