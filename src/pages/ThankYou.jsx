@@ -1,7 +1,24 @@
-import React from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
+// Import Real Result Images
+import KeerthiFront from "../assets/real-results/KeerthiFront.jpg";
+import ManojFront from "../assets/real-results/ManojFront.jpg";
+import NaushadFront from "../assets/real-results/NaushadFront.jpg";
+import RakshaFront from "../assets/real-results/RakshaFront.jpg";
+import SandeepFront from "../assets/real-results/SandeepFront.jpg";
+import VinayFront from "../assets/real-results/VinayFront.jpg";
+import AyushFront from "../assets/real-results/AyushFront.jpg";
 
 const ThankYou = () => {
+    // Array of result images to display
+    const realResults = [
+        KeerthiFront,
+        ManojFront,
+        NaushadFront,
+        RakshaFront,
+        SandeepFront,
+        VinayFront,
+        AyushFront
+    ];
+
     return (
         <div className="min-h-screen bg-white text-[#333]">
             {/* Google Fonts */}
@@ -74,13 +91,15 @@ const ThankYou = () => {
                         See Real People Achieve <span className="text-[#fe6246] italic">Real Results!</span>
                     </h2>
 
-                    {/* Results Grid - Using Placeholders */}
+                    {/* Results Grid - Using Real Images */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {[1, 2, 3].map((i) => (
+                        {realResults.map((imgSrc, i) => (
                             <div key={i} className="aspect-[4/5] bg-gray-100 rounded-xl overflow-hidden relative shadow-md">
-                                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                                    Transformation Result {i}
-                                </div>
+                                <img
+                                    src={imgSrc}
+                                    alt={`Transformation Result ${i + 1}`}
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
                         ))}
                     </div>
