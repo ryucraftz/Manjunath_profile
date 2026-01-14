@@ -38,7 +38,7 @@ const ThankYou = () => {
                     {/* Left Content */}
                     <div className="flex-1 space-y-6 font-dm-sans pt-0 md:pt-10 flex flex-col items-center md:items-start">
                         <div className="text-sm font-bold tracking-wide uppercase text-gray-500">
-                            Healthy Nation <span className="text-gray-400">| Mentally Physically Spiritually</span>
+                            FitBharat Fitness <span className="text-gray-400">| Mentally Physically Spiritually</span>
                         </div>
 
                         <h1 className="text-4xl md:text-5xl font-dm-serif font-normal leading-tight">
@@ -47,7 +47,7 @@ const ThankYou = () => {
 
                         <div className="space-y-4 text-gray-600 text-lg">
                             <p>
-                                Welcome to Healthy Nation Online! 🎉 We’re thrilled to have you on board.
+                                Welcome to FitBharat Fitness Online! 🎉 We’re thrilled to have you on board.
                                 You’ve just taken an incredible step towards a healthier, happier you.
                             </p>
 
@@ -113,7 +113,7 @@ const ThankYou = () => {
                         ))}
                     </div>
 
-                    <div className="fixed bottom-4 left-4 right-4 z-50 flex justify-center md:static md:block">
+                    <div className="fixed bottom-0 left-0 right-0 z-50 bg-black p-4 flex justify-center shadow-2xl">
                         <a
                             href="https://chat.whatsapp.com/IHIRNwlEFDRIjBfyFE1lN1"
                             target="_blank"
