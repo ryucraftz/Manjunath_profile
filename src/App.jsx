@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import "./App.css";
 
@@ -17,11 +17,14 @@ function App() {
   console.log("App.jsx: Rendering...");
   return (
     <Router>
+      <div className="bg-yellow-200 text-black p-4 font-bold text-center z-50 relative">
+        DEBUG MODE: If you see this, React is working.
+      </div>
       <LocationDebugger />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/thank-you" element={<ThankYou />} />
-        <Route path="*" element={<div className="p-10 text-xl font-bold">404 - No Route Matched for {window.location.pathname}</div>} />
+        <Route path="*" element={<div className="p-10 text-xl font-bold">404 - No Route Matched for {window.location.hash}</div>} />
       </Routes>
     </Router>
   );
