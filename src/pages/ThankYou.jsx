@@ -1,4 +1,5 @@
 import { FaWhatsapp } from "react-icons/fa";
+import { useState, useEffect } from "react";
 import majuImg from "../assets/maju.png";
 import KeerthiFront from "../assets/real-results/KeerthiFront.jpg";
 import ManojFront from "../assets/real-results/ManojFront.jpg";
@@ -9,6 +10,24 @@ import VinayFront from "../assets/real-results/VinayFront.jpg";
 
 const ThankYou = () => {
     console.log("ThankYou.jsx: MOUNTING");
+
+    // Scroll visibility logic
+    const [showButton, setShowButton] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            // Show button after scrolling 100px
+            if (window.scrollY > 100) {
+                setShowButton(true);
+            } else {
+                setShowButton(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     // Array of result images to display
     const realResults = [
         KeerthiFront,
@@ -117,12 +136,14 @@ const ThankYou = () => {
                             position: 'fixed',
                             bottom: '30px',
                             left: '50%',
-                            transform: 'translateX(-50%)',
+                            transform: `translateX(-50%) translateY(${showButton ? '0' : '100px'})`,
+                            opacity: showButton ? 1 : 0,
                             zIndex: 9999,
                             width: 'auto',
                             maxWidth: '90%',
+                            transition: 'all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)'
                         }}
-                        className="animate-bounce-slow"
+                        className={`${showButton ? 'pointer-events-auto animate-bounce-slow' : 'pointer-events-none'}`}
                     >
                         <a
                             href="https://chat.whatsapp.com/IHIRNwlEFDRIjBfyFE1lN1"
