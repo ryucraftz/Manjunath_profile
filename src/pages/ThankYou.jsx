@@ -92,20 +92,21 @@ const ThankYou = () => {
                     </h2>
 
                     {/* Results Grid - Using Real Images */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
                         {realResults.map((imgSrc, i) => (
                             <div key={i} className="aspect-[4/5] bg-gray-100 rounded-xl overflow-hidden relative shadow-md">
                                 <img
                                     src={imgSrc}
                                     alt={`Transformation Result ${i + 1}`}
                                     className="w-full h-full object-cover"
+                                    loading="lazy"
                                 />
                                 {/* Day 1 Badge */}
-                                <div className="absolute bottom-4 left-4 bg-[#b91c1c] text-white px-4 py-1.5 rounded-md shadow-lg font-bold text-sm sm:text-base pointer-events-none">
+                                <div className="absolute bottom-2 left-2 md:bottom-4 md:left-4 bg-[#b91c1c] text-white px-2 py-1 md:px-4 md:py-1.5 rounded md:rounded-md shadow-lg font-bold text-[10px] md:text-base pointer-events-none">
                                     Day 1
                                 </div>
                                 {/* Day 90 Badge */}
-                                <div className="absolute bottom-4 right-4 bg-[#b91c1c] text-white px-4 py-1.5 rounded-md shadow-lg font-bold text-sm sm:text-base pointer-events-none">
+                                <div className="absolute bottom-2 right-2 md:bottom-4 md:right-4 bg-[#b91c1c] text-white px-2 py-1 md:px-4 md:py-1.5 rounded md:rounded-md shadow-lg font-bold text-[10px] md:text-base pointer-events-none">
                                     Day 90
                                 </div>
                             </div>
