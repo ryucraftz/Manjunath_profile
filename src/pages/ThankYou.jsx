@@ -142,7 +142,6 @@ const ThankYou = () => {
                 style={{
                     position: 'fixed',
                     bottom: '30px',
-                    left: '40%',
                     transform: `translateX(-50%) translateY(${showButton ? '0' : '100px'})`,
                     opacity: showButton ? 1 : 0,
                     zIndex: 9999,
@@ -150,7 +149,7 @@ const ThankYou = () => {
                     maxWidth: '90vw',
                     transition: 'all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)'
                 }}
-                className={`${showButton ? 'pointer-events-auto animate-bounce-slow' : 'pointer-events-none'}`}
+                className={`${showButton ? 'pointer-events-auto animate-bounce-slow' : 'pointer-events-none'} left-[30%] md:left-[40%]`}
             >
                 <a
                     href="https://chat.whatsapp.com/IHIRNwlEFDRIjBfyFE1lN1"
