@@ -61,7 +61,7 @@ const ThankYou = () => {
                         </div>
 
                         <a
-                            href="https://chat.whatsapp.com/HJgJCfiNsUULmgySHs2m2m"
+                            href="https://chat.whatsapp.com/IHIRNwlEFDRIjBfyFE1lN1"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-3 bg-[#0d8d1b] hover:bg-[#0b7a17] text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-xl"
@@ -113,7 +113,7 @@ const ThankYou = () => {
                     </div>
 
                     <a
-                        href="https://chat.whatsapp.com/HJgJCfiNsUULmgySHs2m2m"
+                        href="https://chat.whatsapp.com/IHIRNwlEFDRIjBfyFE1lN1"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-3 bg-[#0d8d1b] hover:bg-[#0b7a17] text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-xl"
