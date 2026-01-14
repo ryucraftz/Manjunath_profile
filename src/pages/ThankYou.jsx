@@ -8,6 +8,7 @@ import VinayFront from "../assets/real-results/VinayFront.jpg";
 import AyushFront from "../assets/real-results/AyushFront.jpg";
 
 const ThankYou = () => {
+    console.log("ThankYou.jsx: MOUNTING");
     // Array of result images to display
     const realResults = [
         KeerthiFront,
