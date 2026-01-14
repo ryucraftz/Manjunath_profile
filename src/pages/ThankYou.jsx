@@ -130,50 +130,52 @@ const ThankYou = () => {
                         ))}
                     </div>
 
-                    {/* Sticky Floating Footer Button - Creative Design */}
-                    <div
-                        style={{
-                            position: 'fixed',
-                            bottom: '30px',
-                            left: '50%',
-                            transform: `translateX(-50%) translateY(${showButton ? '0' : '100px'})`,
-                            opacity: showButton ? 1 : 0,
-                            zIndex: 9999,
-                            width: 'auto',
-                            maxWidth: '90%',
-                            transition: 'all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)'
-                        }}
-                        className={`${showButton ? 'pointer-events-auto animate-bounce-slow' : 'pointer-events-none'}`}
-                    >
-                        <a
-                            href="https://chat.whatsapp.com/IHIRNwlEFDRIjBfyFE1lN1"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="
-                                group
-                                flex items-center justify-center gap-3 
-                                bg-gradient-to-r from-[#25D366] to-[#128C7E]
-                                text-white 
-                                py-4 px-8 
-                                rounded-full 
-                                font-bold text-lg md:text-xl
-                                shadow-[0_10px_40px_-10px_rgba(37,211,102,0.6)]
-                                hover:shadow-[0_20px_50px_-10px_rgba(37,211,102,0.8)]
-                                hover:scale-105
-                                transition-all duration-300 ease-out
-                                border-2 border-white/20
-                                backdrop-blur-sm
-                            "
-                        >
-                            <FaWhatsapp className="text-2xl md:text-3xl animate-pulse" />
-                            <span>Join Our Whatsapp Group</span>
-                        </a>
-                    </div>
+
 
                     <div className="text-gray-400 text-sm mt-12">
                         All rights reserved
                     </div>
                 </div>
+            </div>
+            {/* Sticky Floating Footer Button - Moved to Root to ensure centering */}
+            <div
+                style={{
+                    position: 'fixed',
+                    bottom: '30px',
+                    left: '50%',
+                    transform: `translateX(-50%) translateY(${showButton ? '0' : '100px'})`,
+                    opacity: showButton ? 1 : 0,
+                    zIndex: 9999,
+                    width: 'max-content',
+                    maxWidth: '90vw',
+                    transition: 'all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)'
+                }}
+                className={`${showButton ? 'pointer-events-auto animate-bounce-slow' : 'pointer-events-none'}`}
+            >
+                <a
+                    href="https://chat.whatsapp.com/IHIRNwlEFDRIjBfyFE1lN1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+                        group
+                        flex items-center justify-center gap-2 sm:gap-3 
+                        bg-gradient-to-r from-[#25D366] to-[#128C7E]
+                        text-white 
+                        py-3 px-6 sm:py-4 sm:px-8 
+                        rounded-full 
+                        font-bold text-base sm:text-lg md:text-xl
+                        shadow-[0_10px_40px_-10px_rgba(37,211,102,0.6)]
+                        hover:shadow-[0_20px_50px_-10px_rgba(37,211,102,0.8)]
+                        hover:scale-105
+                        transition-all duration-300 ease-out
+                        border-2 border-white/20
+                        backdrop-blur-sm
+                        whitespace-nowrap
+                    "
+                >
+                    <FaWhatsapp className="text-xl sm:text-2xl md:text-3xl animate-pulse" />
+                    <span>Join Our Whatsapp Group</span>
+                </a>
             </div>
         </div>
     );
