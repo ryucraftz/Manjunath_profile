@@ -6,9 +6,38 @@ import LandingPage from "./pages/LandingPage";
 import ThankYou from "./pages/ThankYou";
 
 class ErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false, error: null, errorInfo: null };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error, errorInfo) {
+    this.setState({ error, errorInfo });
+    console.error("ErrorBoundary caught an error", error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="p-10 text-red-600 bg-white">
+          <h1 className="text-2xl font-bold">Something went wrong.</h1>
+          <details className="whitespace-pre-wrap">
+            {this.state.error && this.state.error.toString()}
+            <br />
+            {this.state.errorInfo && this.state.errorInfo.componentStack}
+          </details>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
 
 function App() {
-  console.log("App.jsx: Rendering...");
   return (
     <Router>
       <ErrorBoundary>
