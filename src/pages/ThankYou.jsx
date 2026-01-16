@@ -15,6 +15,11 @@ const ThankYou = () => {
     const [showButton, setShowButton] = useState(false);
 
     useEffect(() => {
+        // Track PageView on component mount
+        if (typeof window.fbq === 'function') {
+            window.fbq('track', 'PageView');
+        }
+
         const handleScroll = () => {
             // Show button after scrolling 100px
             if (window.scrollY > 100) {
