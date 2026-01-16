@@ -11,12 +11,6 @@ import raksha from "../assets/testimonials/Raksha.jpg";
 
 
 // import manoj from "../assets/testimonials/trans5.jpg";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export default function TestimonialsSection() {
   const testimonials = [
@@ -101,7 +95,7 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Cards */}
-        {/* <div className="mt-8 sm:mt-12">
+        <div className="mt-8 sm:mt-12">
           <div className="grid grid-cols-1 gap-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-7">
             {testimonials.map((t, idx) => (
               <div key={`${t.name || "anon"}-${idx}`} className="w-full">
@@ -109,32 +103,7 @@ export default function TestimonialsSection() {
               </div>
             ))}
           </div>
-        </div> */}
-
-        <Swiper
-          modules={[Autoplay, Pagination, Navigation]}
-          spaceBetween={24}
-          slidesPerView={1}
-          loop={true}
-          grabCursor={true}
-          autoplay={{
-            delay: 3000,               // time between slides (ms)
-            disableOnInteraction: false // keep sliding after swipe
-          }}
-          pagination={{ clickable: true }}
-          navigation
-          breakpoints={{
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 }
-          }}
-        >
-
-          {testimonials.map((t, idx) => (
-            <SwiperSlide key={`${t.name || "anon"}-${idx}`}>
-              <TestimonialCard t={t} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        </div>
       </div>
     </section>
   );
