@@ -48,7 +48,7 @@ const ThankYou = () => {
             {/* Google Fonts */}
             <style>
                 {`
-          @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=DM+Serif+Display&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap');
           .font-dm-serif { font-family: 'DM Serif Display', serif; }
           .font-dm-sans { font-family: 'DM Sans', sans-serif; }
         `}
